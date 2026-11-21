@@ -1,0 +1,37 @@
+VOLT V2.3.1 — ALL-IN-ONE ACCOUNT DEVELOPMENT UPDATE
+
+WHAT IS READY NOW
+1. Existing VOLT neon interface retained; online login, signup, reset-password, and account states are present.
+2. Inline account feedback and validation are included for common errors.
+3. Supabase profile schema includes owner-only Row Level Security (RLS), an auth-user profile trigger, and no client-side delete policy.
+4. A fully interactive OFFLINE DEMO ACCOUNT mode lets you create, log in, sign out, and clear test profiles without Supabase, real email, or passwords.
+
+IMPORTANT: DEMO MODE IS NOT REAL AUTHENTICATION
+- Demo profiles are saved only in this browser's local storage.
+- Demo mode does not verify identity, use passwords, or send data to a server.
+- Use fictional test details such as Nova Tester / nova@volt.test.
+- Do not enter a real password, private information, or actual email address in the demo panel.
+- Demo mode is for testing interface states only, not security testing.
+
+HOW TO TEST NOW (NO SUPABASE ACCOUNT NEEDED)
+1. Back up your current VOLT folder.
+2. Extract this ZIP and replace the matching files in your existing project folder.
+3. Open VOLT and go to Profile > Log in (or Create account).
+4. Scroll to “Try VOLT accounts now”. Tap LOAD SAMPLE.
+5. Tap CREATE DEMO ACCOUNT. The success panel should appear and the Profile page should show DEMO ACCOUNT.
+6. Return to the account page and tap LOG IN TO DEMO ACCOUNT to test returning-user flow.
+7. Use Profile > Sign out, then log in again. Use Clear demo profiles to reset the test data.
+
+SUPABASE CONNECTION LATER
+- The online form remains disconnected until a project URL and public publishable/anon key are configured in supabase-config.js.
+- Run supabase-schema.sql in the authorized Supabase project's SQL Editor.
+- Configure the correct Site URL and allowed redirect URLs in Supabase Auth settings.
+- Only use the public publishable/anon key in browser code. NEVER place a service_role/secret key in this app.
+- Ask an authorized adult to review service terms and project ownership if required. Do not falsify your age or account details.
+- Keep email confirmation enabled during real-account testing.
+
+SECURITY / PRODUCT LIMITATIONS
+- The SQL RLS policies limit each signed-in user to their own profile row. The auth trigger creates a profile on registration.
+- No admin panel, billing, VPN tunnel, traffic encryption, VPN server, or Android VPN service is included.
+- A successful UI demo does not prove real online authentication or security.
+- Do not commit actual passwords or secret keys to a public repository.

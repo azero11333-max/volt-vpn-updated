@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">VOLT VPN app icon</title>
+  <desc id="desc">Electric blue lightning bolt on a dark navy rounded square.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111f38"/>
+      <stop offset="1" stop-color="#050914"/>
+    </linearGradient>
+    <linearGradient id="bolt" x1="0" y1="0" x2="0.9" y2="1">
+      <stop offset="0" stop-color="#8be9ff"/>
+      <stop offset="0.48" stop-color="#28bfff"/>
+      <stop offset="1" stop-color="#176bff"/>
+    </linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect x="16" y="16" width="480" height="480" rx="112" fill="url(#bg)"/>
+  <rect x="17.5" y="17.5" width="477" height="477" rx="110.5" fill="none" stroke="#24456d" stroke-opacity=".65" stroke-width="3"/>
+  <circle cx="256" cy="246" r="156" fill="#087dff" opacity=".09"/>
+  <path d="M284 70 143 275h91l-17 167 153-226h-99z" fill="#168cff" opacity=".48" filter="url(#glow)"/>
+  <path d="M278 72 151 270h91l-15 169 145-224h-96z" fill="url(#bolt)" stroke="#b7f2ff" stroke-opacity=".85" stroke-width="7" stroke-linejoin="round"/>
+  <path d="m278 72-36 198h-91z" fill="#d8faff" opacity=".22"/>
+</svg>

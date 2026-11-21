@@ -1,0 +1,14 @@
+{
+  "name": "VOLT VPN",
+  "short_name": "VOLT",
+  "description": "VOLT VPN app prototype and development preview",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#050914",
+  "theme_color": "#050914",
+  "icons": [
+    {"src":"volt-icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}
+  ]
+}
